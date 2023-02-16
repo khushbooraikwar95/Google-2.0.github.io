@@ -3,11 +3,11 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import AppsIcon from "@mui/icons-material/Apps";
 import { Avatar } from "@mui/material";
+import Search from "./Search";
 
 function home() {
   return (
     <div className="home">
-      <h1>THIS IS HOME PAGE</h1>
       <div className="home__header">
         <div className="home__headerLeft">
           {/* Link*/}
@@ -32,7 +32,10 @@ function home() {
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Google_logo_%282013-2015%29.svg"
           alt=""
-        ></img>
+        />
+        <div className="home__inputContainer">
+          <Search />
+        </div>
       </div>
     </div>
   );
